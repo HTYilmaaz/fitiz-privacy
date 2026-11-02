@@ -91,56 +91,76 @@
   <section class="card" id="privacy-en">
     <span class="lang-label">English</span>
     <h2>Privacy Policy</h2>
-    <p class="updated">Last updated: July 6, 2026</p>
+    <p class="updated">Last updated: November 2, 2026</p>
 
-    <h3>What data we collect</h3>
+    <h3>What data we collect and where it goes</h3>
     <ul>
-      <li><strong>Health &amp; fitness data</strong> (weight, height, body measurements, workout logs, sleep times, nutrition/calorie entries) is stored <strong>on your device only</strong>. We do not store it on our servers; deleting the app deletes this data.</li>
-      <li><strong>Account info</strong> (only if you sign in with Google/Apple): name, email and provider are kept in Google Firebase for authentication. Signing in is optional; the app is fully functional without an account.</li>
-      <li><strong>Weekly coach report</strong>: when you request a report, SUMMARY metrics of your last 4 weeks (e.g. average sleep, workout counts, weight trend, exercise weights) are sent through our server to OpenAI's API to generate the report. They are used solely for report generation; we do not store report contents. OpenAI's policy: <a href="https://openai.com/policies">https://openai.com/policies</a></li>
-      <li><strong>Notifications</strong> are fully local; no data leaves your device.</li>
-      <li><strong>Analytics/ads</strong>: the app contains NO analytics or advertising SDKs.</li>
+      <li><strong>Health &amp; fitness data</strong> (weight, height, body measurements, workouts, sleep, nutrition/calorie entries) is stored <strong>on your device</strong>. <strong>If you sign in</strong> with Google or Apple, it is also <strong>backed up</strong> to a private area tied to your account in <strong>Google Firebase (Cloud Firestore)</strong>, so you can restore it on a new device. If you don't sign in, this data does not leave your device (except for the AI features below, and only with your consent).</li>
+      <li><strong>Health safety answers</strong>: the optional checkbox about pregnancy/breastfeeding, a history of disordered eating or a chronic condition, and unfinished onboarding answers are kept <strong>only on your device</strong>. They are not included in the cloud backup.</li>
+      <li><strong>AI features (photos and weekly report)</strong>: food photos (calorie/macro estimate), progress photos and, for the weekly coach report, summary metrics of your recent weeks (e.g. average sleep, workout counts, weight trend, exercise weights) are sent through our server to <strong>OpenAI</strong> for analysis. This happens <strong>only after you agree</strong> in the app; you can withdraw your consent anytime in Profile. Photos and report contents are <strong>not stored on our server</strong>. See <a href="https://openai.com/policies">OpenAI's policies</a>.</li>
+      <li><strong>Account info</strong> (only if you sign in): name, email and sign-in provider are kept in Google Firebase for authentication. Signing in is optional.</li>
+      <li><strong>Purchases</strong>: subscriptions are paid through Apple. <strong>RevenueCat</strong> processes your subscription status using an app user ID. We never see your payment details.</li>
+      <li><strong>Usage and credit records</strong>: to apply daily limits and credits, our server keeps an identifier (your account ID, an app-generated device ID or your IP address) with the date. No photos or health values are stored. These records are deleted after at most <strong>90 days</strong>.</li>
+      <li><strong>Analytics and ads</strong>: the app currently sends <strong>no analytics</strong> and contains <strong>no advertising SDKs</strong>. If this changes, this page will be updated first.</li>
+      <li><strong>Notifications</strong> are local reminders; no data leaves your device for them.</li>
     </ul>
+
+    <h3>Service providers</h3>
+    <p>We use Google Firebase (sign-in, cloud backup), OpenAI (AI analysis), RevenueCat and Apple (subscriptions) and Railway (our server). Their servers may be located outside your country, including in the United States.</p>
+
+    <h3>Age</h3>
+    <p>FITIZ is not intended for children under 13. Users aged 13–17 can only use a weight-maintenance calorie target.</p>
 
     <h3>Deleting your data</h3>
     <ul>
-      <li>On-device data: delete the app, or Profile → "Reset Onboarding".</li>
-      <li>Account: Profile → "Delete Account" permanently deletes your Firebase account.</li>
+      <li><strong>Account and cloud backup</strong>: Profile → "Delete Account" permanently deletes your Firebase account and your cloud backup.</li>
+      <li><strong>On-device data</strong>: deleting the app removes all data stored on your device. Profile → "Reset Onboarding" only resets your onboarding answers; it does not delete your logs.</li>
+      <li><strong>Usage records</strong> are deleted automatically within 90 days. You can also ask us to delete them by email.</li>
     </ul>
 
     <h3>Medical disclaimer</h3>
-    <p>FITIZ's calorie targets, body-fat estimates and coach suggestions are for <strong>general information only and are not medical advice</strong>. Consult a health professional before starting any diet or training program.</p>
+    <p>FITIZ's calorie targets, body-fat estimates and coach suggestions are for <strong>general information only and are not medical advice</strong>. Consult a health professional before starting any diet or training program, especially if you are pregnant or breastfeeding, have a chronic condition or a history of disordered eating.</p>
 
     <h3>Contact</h3>
-    <p>Questions: <a href="mailto:tunayilmaaz@gmail.com">tunayilmaaz@gmail.com</a></p>
+    <p>Questions or data requests: <a href="mailto:tunayilmaaz@gmail.com">tunayilmaaz@gmail.com</a></p>
   </section>
 
   <!-- PRIVACY TR -->
   <section class="card" id="privacy-tr">
     <span class="lang-label">Türkçe</span>
     <h2>Gizlilik Politikası</h2>
-    <p class="updated">Son güncelleme: 6 Temmuz 2026</p>
+    <p class="updated">Son güncelleme: 2 Kasım 2026</p>
 
-    <h3>Hangi verileri topluyoruz?</h3>
+    <h3>Hangi verileri topluyoruz, nereye gidiyor?</h3>
     <ul>
-      <li><strong>Sağlık ve fitness verileri</strong> (kilo, boy, vücut ölçüleri, antrenman kayıtları, uyku saatleri, beslenme/kalori girişleri): <strong>yalnızca cihazında</strong> saklanır. Sunucularımızda saklanmaz; uygulamayı silersen bu veriler de silinir.</li>
-      <li><strong>Hesap bilgileri</strong> (yalnızca Google/Apple ile giriş yaparsan): ad, e-posta ve kimlik sağlayıcısı, kimlik doğrulama için Google Firebase'de tutulur. Giriş yapmak zorunlu değildir; uygulama girişsiz de tam çalışır.</li>
-      <li><strong>Haftalık koç raporu</strong>: raporu istediğinde son 4 haftanın ÖZET metrikleri (ör. ortalama uyku süresi, antrenman sayısı, kilo değişimi, egzersiz ağırlıkları) rapor üretimi için sunucumuz üzerinden OpenAI'ın API'sine gönderilir. Bu veriler rapor üretmek dışında kullanılmaz; sunucumuzda rapor içeriği saklanmaz. OpenAI'ın veri politikası: <a href="https://openai.com/policies">https://openai.com/policies</a></li>
-      <li><strong>Bildirimler</strong>: tamamen yereldir; cihazından dışarı veri çıkmaz.</li>
-      <li><strong>Analitik/reklam</strong>: uygulamada analitik veya reklam SDK'sı YOKTUR.</li>
+      <li><strong>Sağlık ve fitness verileri</strong> (kilo, boy, vücut ölçüleri, antrenman, uyku, beslenme/kalori kayıtları) <strong>cihazında</strong> saklanır. Google ya da Apple ile <strong>giriş yaparsan</strong>, yeni cihazda geri yükleyebilmen için <strong>Google Firebase (Cloud Firestore)</strong> üzerinde hesabına bağlı özel bir alana da <strong>yedeklenir</strong>. Giriş yapmazsan bu veriler cihazından çıkmaz (aşağıdaki yapay zekâ özellikleri hariç; onlar da yalnız onayınla).</li>
+      <li><strong>Sağlık güvenliği cevapları</strong>: hamilelik/emzirme, yeme bozukluğu geçmişi ya da kronik hastalık için isteğe bağlı kutu ve yarıda kalan onboarding cevapları <strong>yalnız cihazında</strong> tutulur; bulut yedeğine eklenmez.</li>
+      <li><strong>Yapay zekâ özellikleri (fotoğraf ve haftalık rapor)</strong>: yemek fotoğrafları (kalori/makro tahmini), gelişim fotoğrafları ve haftalık koç raporu için son haftalarının özet değerleri (ör. ortalama uyku, antrenman sayısı, kilo eğilimi, egzersiz ağırlıkları) analiz için sunucumuz üzerinden <strong>OpenAI</strong>'ye gönderilir. Bu, ancak uygulamada <strong>onay verdikten sonra</strong> olur; onayını istediğin zaman Profil'den geri alabilirsin. Fotoğraflar ve rapor içeriği <strong>sunucumuzda saklanmaz</strong>. OpenAI'nin politikası: <a href="https://openai.com/policies">https://openai.com/policies</a></li>
+      <li><strong>Hesap bilgileri</strong> (yalnız giriş yaparsan): ad, e-posta ve giriş sağlayıcısı kimlik doğrulama için Google Firebase'de tutulur. Giriş zorunlu değildir.</li>
+      <li><strong>Satın almalar</strong>: abonelik ücreti Apple üzerinden ödenir. <strong>RevenueCat</strong>, abonelik durumunu bir uygulama kullanıcı kimliğiyle işler. Ödeme bilgilerini biz hiçbir zaman görmeyiz.</li>
+      <li><strong>Kullanım ve kredi kayıtları</strong>: günlük sınırlar ve krediler için sunucumuz bir kimliği (hesap kimliğin, uygulamanın ürettiği cihaz kimliği ya da IP adresin) tarihle birlikte tutar. Fotoğraf ya da sağlık değeri tutulmaz. Bu kayıtlar en fazla <strong>90 gün</strong> sonra silinir.</li>
+      <li><strong>Analitik ve reklam</strong>: uygulama şu an <strong>analitik verisi göndermez</strong> ve <strong>reklam SDK'sı içermez</strong>. Bu değişirse önce bu sayfa güncellenir.</li>
+      <li><strong>Bildirimler</strong> cihazdaki yerel hatırlatmalardır; bunlar için cihazından veri çıkmaz.</li>
     </ul>
+
+    <h3>Hizmet sağlayıcılar</h3>
+    <p>Google Firebase (giriş, bulut yedeği), OpenAI (yapay zekâ analizi), RevenueCat ve Apple (abonelik) ve Railway (sunucumuz) kullanılır. Bu sağlayıcıların sunucuları Türkiye dışında, ABD dahil başka ülkelerde olabilir.</p>
+
+    <h3>Yaş</h3>
+    <p>FITIZ 13 yaşından küçükler için değildir. 13–17 yaş arasındaki kullanıcılar yalnız kilo koruma hedefiyle kalori hedefi kullanabilir.</p>
 
     <h3>Verilerin silinmesi</h3>
     <ul>
-      <li>Cihazdaki veriler: uygulamayı silerek veya Profil → "Onboarding'i Sıfırla" ile.</li>
-      <li>Hesap: Profil → "Hesabı Sil" ile Firebase hesabın kalıcı olarak silinir.</li>
+      <li><strong>Hesap ve bulut yedeği</strong>: Profil → "Hesabı Sil" ile Firebase hesabın ve bulut yedeğin kalıcı olarak silinir.</li>
+      <li><strong>Cihazdaki veriler</strong>: uygulamayı silmek cihazındaki tüm verileri siler. Profil → "Onboarding'i Sıfırla" yalnız onboarding cevaplarını sıfırlar; kayıtlarını silmez.</li>
+      <li><strong>Kullanım kayıtları</strong> 90 gün içinde kendiliğinden silinir. Silinmesini e-postayla da isteyebilirsin.</li>
     </ul>
 
     <h3>Tıbbi uyarı</h3>
-    <p>FITIZ'in kalori hedefleri, vücut yağı tahminleri ve koç önerileri <strong>genel bilgilendirme amaçlıdır; tıbbi tavsiye değildir</strong>. Beslenme/antrenman programına başlamadan önce bir sağlık profesyoneline danış.</p>
+    <p>FITIZ'in kalori hedefleri, vücut yağı tahminleri ve koç önerileri <strong>genel bilgilendirme amaçlıdır; tıbbi tavsiye değildir</strong>. Beslenme ya da antrenman programına başlamadan önce, özellikle hamileysen ya da emziriyorsan, kronik bir hastalığın ya da yeme bozukluğu geçmişin varsa bir sağlık profesyoneline danış.</p>
 
     <h3>İletişim</h3>
-    <p>Sorular için: <a href="mailto:tunayilmaaz@gmail.com">tunayilmaaz@gmail.com</a></p>
+    <p>Sorular ve veri talepleri: <a href="mailto:tunayilmaaz@gmail.com">tunayilmaaz@gmail.com</a></p>
   </section>
 
   <footer>
